@@ -225,7 +225,7 @@ header .logo {
 
 .popularcarbox .cartags .offertag {
   padding: 5px;
-  background-color: #0e9005;
+  background-color: #ff5c00;
   color: white;
   border-radius: 20px;
   font-size: small;
@@ -273,11 +273,12 @@ header .logo {
 
 .buybutton:hover {
   background-color: #34ae3c;
-  transform: scale(1.1);
+  transform: scale(1.1) translateY(-2px);
   box-shadow: 0 12px 18px rgba(0, 0, 0, 0.18);
 }
 
 #popularsection {
+  width: 100%;
   background-color: #c62828;
   background: radial-gradient(circle at top, #b33d3b, #d32f2f, #540505);
   margin-bottom: 0;
@@ -287,7 +288,7 @@ header .logo {
 }
 
 .precios {
-  margin-top: 20px;
+  margin-top: 10px;
   font-size: 25px;
   justify-content: center;
   color: #0e9005;
