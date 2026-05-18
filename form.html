@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="public/LOGO3.png" type="image/x-icon" />
+        <link rel="stylesheet" href="styles.css" />
+
+    <title>Baires - Rent a Car</title>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img
+          src="public/LOGO_2-removebg-preview (1).png"
+          alt="LOGOTIPO DE LA EMPRESA DE MARCA Baires"
+        />
+      </div>
+      <nav>
+        <ul class="navegacion">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="aboutus.html">Sobre nosotros</a></li>
+          <li><a href="index.html#servicios">Nuestros servicios</a></li>
+        </ul>
+      </nav>
+      <a href="form.html" class="button"
+        ><button type="button">Reservar</button></a
+      >
+    </header>
+    <form>
+    <fieldset>
+        <legend>INFORMACIÓN PERSONAL</legend>
+        <div>
+          <label for="nombre">Nombre:</label>
+          <input
+            type="text"
+            name="nombre"
+            id="nombre"
+            required
+            minlength="2"
+            aria-autocomplete="list"
+          />
+        </div>
+        <div>
+          <label for="apellido">Apellido:</label>
+          <input type="text" name="apellido" id="apellido" required minlength="2" aria-autocomplete="list"/>
+        </div>
+        <div>
+          <label for="email">Correo electrónico:</label>
+          <input type="text" name="email" id="email" required minlength="2" aria-autocomplete="list"/>
+        </div>
+        <div>
+          <label for="telefono">Número de teléfono:</label>
+          <input
+            type="tel"
+            name="telefono"
+            id="telefono"
+            required
+            aria-autocomplete="list"
+          />
+        </div>
+        <div>
+          <label for="dni">Número de documento (DNI o Pasaporte):</label>
+          <input
+            type="number"
+            name="dni"
+            id="dni"
+            required
+            aria-autocomplete="list"
+          />
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>INFORMACIÓN DE LA RESERVA</legend>
+        <div>
+            <span class="group-title">Seleccione tipo de vehículo:</span>
+            <input type="radio" name="vehtype" id="compacto" value="compacto" required/>
+            <label for="compacto">Compacto</label>
+            <input type="radio" name="vehtype" id="mediano" value="mediano" required/>
+            <label for="mediano">Mediano</label>
+            <input type="radio" name="vehtype" id="camioneta" value="camioneta" required/>
+            <label for="camioneta">Camioneta</label>
+        </div>
+        <div>
+            <label for="modeloveh">Modelo de vehículo:</label>
+            <select name="modeloveh" id="modeloveh" required>
+                <option value="renault-captur">Renault Captur</option>
+                <option value="vol-polo">Volkswagen Polo</option>
+                <option value="fiat-toro">Fiat Toro</option>
+                <option value="ford-fiesta">Ford Fiesta</option>
+            </select>
+        </div>
+        <div>
+            <span class="group-title">Seleccione servicios adicionales:</span>
+            <input type="checkbox" name="extra" id="gps" />
+            <label for="gps">Dispositivo GPS</label>
+            <input type="checkbox" name="extra" id="sillaninos" />
+            <label for="sillaninos">Silla para niños</label>
+        </div>
+        <div>
+            <label for="fecharetiro">Fecha y hora de retiro:</label>
+            <input type="datetime-local" name="fecharetiro" id="fecharetiro" required>
+        </div>
+        <div>
+            <label for="sucursalretiro">Sucursal de retiro:</label>
+            <select name="sucursalretiro" id="sucursalretiro" required>
+                <option value="norte">Sede norte (Av. del Libertador 602, CABA)</option>
+                <option value="central" selected>Sede central (Av. Don Joaquín Garay 159, CABA)</option>
+                <option value="sur">Sede sur (Av. Paseo Colón 1102, CABA)</option>
+            </select>
+        </div>
+        <div>
+            <label for="fechadevolucion">Fecha de devolución:</label>
+            <input type="date" name="fechadevolucion" id="fechadevolucion" required>
+        </div>
+        <div>
+            <label for="metpago">Metodo de pago:</label>
+            <select name="metpago" id="metpago" required>
+                <option value="efectivo" selected>Efectivo (5% OFF EXTRA)</option>
+                <option value="transferencia">Transferencia bancaria</option>
+                <option value="credito">Tarjeta de crédito (10% RECARGO EXTRA)</option>
+            </select>
+        </div>
+        <div>
+            <label for="comentarios">Observaciones adicionales:</label>
+            <textarea name="comentarios"
+                id="comentarios">
+            </textarea>
+        </div>
+      </fieldset>
+      <div>
+        <input type="checkbox" name="checkterms" id="checkterms" />
+        <label for="checkterms">Acepto los <a href="#">terminos y condiciones</a>.</label>
+      </div>
+      <div class="form-buttons">
+        <button type="submit">Enviar</button>
+        <button type="reset">Limpiar formulario</button>
+    </div>
+    </form>
+
+    <footer>
+      <div class="maincontactinfo">
+        <div class="locationinfo">
+          <p>Av. Don Joaquín Garay 159, Ciudad Autónoma de Buenos Aires, Argentina</p>
+          <H4>Horarios de atencion</H6>
+          <p>Lunes a Sábados, de 8 a 20hs</p>
+        </div>
+        <div class="contactinfo">
+          <p>Tel. +54 9 11 3413731518
+            <br>
+            joaquingaraygomez@gmail.com
+            <br>
+            joaquin.garay@frsn.utn.edu.ar</p>
+            <div class="socialmedias">
+              <a href="https://www.instagram.com" target="_blank">
+                <img src="public/instagram.png" alt="Logo de red social instagram">
+              </a>
+              <a href="https://www.facebook.com" target="_blank">
+                <img src="public/facebook.png" alt="Logo de red social facebook">
+              </a>
+              <a href="https://www.x.com" target="_blank">
+                <img src="public/x.png" alt="Logo de red social instagram">
+              </a>
+            </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
